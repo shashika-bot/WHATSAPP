@@ -43,7 +43,7 @@ cmd({
 
     const apiUrl = `https://apis.davidcyriltech.my.id/flux?prompt=${encodeURIComponent(text)}`;
 
-    await conn.sendMessage(m.chat, { image: { url: apiUrl }, caption: `🎨 *Flux Image Generator*\n\n📄 *Prompt:* ${text}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ ᴅɪɴᴇꜱʜ` }, { quoted: m });
+    await conn.sendMessage(m.chat, { image: { url: apiUrl }, caption: `🎨 *Image Generator*\n\n📄 *Prompt:* ${text}\n\n> Enjoy img` }, { quoted: m });
   } catch (error) {
     console.error('Error in Flux command:', error);
     reply(`*AN ERROR OCCURRED!! MESSAGE :*\n\n> ${error.message}`);
